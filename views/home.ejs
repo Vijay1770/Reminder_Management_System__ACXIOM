@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: gilroy; 
+            }
+            html , body{
+                height: 100%;
+                width: 100%;
+            }
+            .container{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                color: white;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            a{
+                text-decoration: none;
+                color: grey;
+                display: block;
+                margin:10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            button{
+                background-color: red;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Reminder Application <%=user.username%></h1>
+        <h2>Today is <%=new Date().toDateString()%></h2>
+        <a href="/reminder">Set Reminder</a>
+        <a href="/reminder">Modify Reminder</a>
+        <a href="/reminder">Disable Reminder</a>
+        <a href="/reminder">Enable Reminder</a>
+        <a href="/reminder">View your Reminder</a>
+        <a href="/logout"><button>Log out</button></a>
+    				    
+    </div>
+</body>
+</html>
